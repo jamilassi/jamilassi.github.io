@@ -103,7 +103,7 @@ function Calendar(id,date,css,language) {
 				htmlCalendar+='<option'+selected+'>'+i+'</option>'; 
 		}
 		htmlCalendar+= '</select></div>';
-		htmlCalendar+= '<br><br>';
+		htmlCalendar+= '<br>';
 		htmlCalendar+= '<table class="calendar '+css+'" cellpadding="0px" cellspacing="0px" border="0">';
 		
         htmlCalendar+= '<tr>';	
