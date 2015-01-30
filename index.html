@@ -1,0 +1,42 @@
+<!-- Jamil Assi -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Calendar</title>
+     <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/calendar.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Codystar:300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css.map" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload=init()>
+    <h1>My <span id="titre">Blue</span> Calendar</h1>
+    <p class="soustitre">Please fasten your seatbelt before time-travelling</p>
+    
+    <div class="choice">
+    <span class="lang">English</a>&nbsp;&bull;&nbsp;</span>
+    <a href="javascript:small()" id="small">Small</a>&nbsp;|&nbsp;
+    <a href="javascript:regular()" id="regular">Medium</a>&nbsp;|&nbsp;
+    <a href="javascript:large()" id="large">Large</a></a>
+    <br>
+    <span class="lang">Français</a>&nbsp;&bull;&nbsp;</span>
+    <a href="javascript:petit()" id="small">Petit</a>&nbsp;|&nbsp;
+    <a href="javascript:french()" id="regular">Moyen</a>&nbsp;|&nbsp;
+    <a href="javascript:grand()" id="large">Grand</a></a>
+    </div><br><br><br>
+    
+    <div id="calendar"></div>
+    
+<script src="js/jquery-2.1.3.js"></script>  
+<script src="js/bootstrap.js"></script>
+<script src="js/Calendar.fr.js"></script> 
+<script src="js/Calendar.js"></script>    
+<script src="js/main.js"></script>
+<script src="js/utils.js"></script>
+</body>
+</html>

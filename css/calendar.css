@@ -1,0 +1,148 @@
+.calendar {
+	background-color: #BED9FF;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: thin;
+	border-radius: 18px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: inset 0px 0px 8px 0px;
+	box-shadow: inset 0px 0px 7px 0px;
+	background-image: url(../img/Alberni%20-%20BC-%209th%20June%201921%204pm.jpg);
+	background-size:cover;
+	opacity:0.9;
+}
+
+.calendar table {
+	cellspacing: 3px;
+	}
+
+
+.calendar th {
+	color:#fff;
+}
+
+.calendar td {
+	width:50px;
+	height:50px;
+	text-align: center;
+	padding:3px;
+	vertical-align:center;
+	/*text-shadow: 0 0 6px #fff;*/
+}
+
+.calendar.small td {
+	width:30px;
+	height:30px;
+}
+
+.calendar.large td {
+	width:70px;
+	height:50px;
+	}
+
+.calendar .week {
+	color: #000;
+	font-size: small;
+	font-weight: bold;
+	text-align: center;
+	font-style: normal;
+	font-variant: small-caps;
+	height: 16px;
+	text-shadow: 0 0 15px #fff;
+	}
+
+.calendar.small .week .petit {
+	display:none;
+} 
+
+.calendar.small .petit {
+	display:none;
+}
+
+select {
+	font-family: 'La Belle Aurore', cursive;
+	background-color: #BED9FF;
+	}
+ 
+.calendar .current {
+	color: #000;
+	height: 30px;
+	font-family: 'Codystar', cursive;
+	font-size: 150%;
+	background-color: ;
+	font-variant: small-caps;
+	font-weight: bolder;
+	}
+	
+.calendar.small {
+	width:350px;
+	}
+	
+.sun {
+	color: #fff;
+	text-shadow: 0px 0 6px #000000;
+}
+
+.sat {
+	color: #fff;
+	text-shadow: 0px 0 6px #000000;
+}
+.today{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	background:linear-gradient(to bottom, #40b3ff, #09f);
+	text-align:center;
+	color:#000;
+	}
+.buttons {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.control {
+	text-align:center;
+	opacity:0.777;
+	}
+button {
+	color: #Fff;
+	font-family: 'La Belle Aurore', cursive;
+	font-size: medium;
+	background-color: #1FA5FF;
+	border: 2px solid #eee;
+	height: 30px;
+	margin: 0px auto;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	/*Rounded Corners*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*Gradient*/
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	/*Shadow*/
+	-webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+	/*Transition*/
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;	
+	}
+button:hover {
+  background-color: #fff;
+  color:#1986CF;
+}			
