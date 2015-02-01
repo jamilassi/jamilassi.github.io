@@ -107,10 +107,10 @@ function Calendar(id,date,css,language) {
 		htmlCalendar+= '<table class="calendar '+css+'" cellpadding="0px" cellspacing="0px" border="0">';
 		
         htmlCalendar+= '<tr>';	
-		htmlCalendar += '<td  colspan="2"><div class="buttons"><button onclick="'+getNewCalendar(year,month,0)+'">'+previousMonth+'</button></div></td>';
-		
-    	htmlCalendar += '<td  colspan="3"><div class="current">'+months[month].substr(0,3)+'<span class="petit">'+months[month].substr(3)+'</span></div></td>';
-    	htmlCalendar +=	'<td  colspan="2"><div class="buttons"><button onclick="'+getNewCalendar(year,month,32)+'">'+nextMonth+'</button></div></td>';
+		htmlCalendar += '<td  colspan="2"><div class="bouttons"><button class="boutton" onclick="'+getNewCalendar(year,month,0)+'">'+previousMonth+'</button></div></td>';
+	/*	htmlCalendar += '<td  colspan="3"><div class="current">'+months[month].substr(0,3)+'<span class="petit">'+months[month].substr(3)+'</span></div></td>';*/
+		htmlCalendar += '<td  colspan="3"><div class="current">'+months[month]+'</span></div></td>';
+    	htmlCalendar +=	'<td  colspan="2"><div class="bouttons"><button class="boutton" onclick="'+getNewCalendar(year,month,32)+'">'+nextMonth+'</button></div></td>';
 		
         htmlCalendar += '</tr>';
         htmlCalendar+= '<tr class="week">';
@@ -165,14 +165,36 @@ function Calendar(id,date,css,language) {
 		var previousYear=year-1;
 		var nextYear=year+1;	
 		htmlCalendar+= '<tr>';	
-		htmlCalendar += '<td  colspan="2"><div class="buttons"><button onclick="'+getNewCalendar(previousYear,month,1)+'">'+previousYear+'</button></div></td>';
+		htmlCalendar += '<td  colspan="2"><div class="bouttons"><button class="boutton" onclick="'+getNewCalendar(previousYear,month,1)+'">'+previousYear+'</button></div></td>';
 		
     	htmlCalendar += '<td  colspan="3"><div class="current">'+year+'</div></td>';
-    	htmlCalendar +=	'<td  colspan="2"><div class="buttons"><button onclick="'+getNewCalendar(nextYear,month,1)+'">'+nextYear+'</button></div></td>';
+    	htmlCalendar +=	'<td  colspan="2"><div class="bouttons"><button class="boutton" onclick="'+getNewCalendar(nextYear,month,1)+'">'+nextYear+'</button></div></td>';
 		
         htmlCalendar += '</tr>';
         htmlCalendar+= '</table>';
     
     element.innerHTML=htmlCalendar;
+	
+// Erase this part when using the Calendar.js for your own on another Website.
+// This following part is an annexe proper to my demo site only for test purpose;
+// Erase from this commentary to commentary: point B
+	
+	var htmlText='<span class="titre">'+months[month]+'</span><br>';
+	if (window.calendar[language] && window.calendar[language].text) {
+		var text=window.calendar[language].text;
+	}
+	else {
+   
+	var text = ['January (in Latin, Ianuarius) is named after Janus, the god of beginnings and transitions; the name has its beginnings in Roman mythology, coming from the Latin word for door (ianua) since January is the door to the year.','The Roman month Februarius was named after the Latin term februum, which means purification, via the purification ritual Februa held on February 15 (full moon) in the old lunar Roman calendar','The name of March comes from Latin Martius, the first month of the earliest Roman calendar. It was named for Mars, the Roman god of war who was also regarded as a guardian of agriculture and an ancestor of the Roman people through his sons Romulus and Remus','The Romans gave this month the Latin name Aprilis but the derivation of this name is uncertain. The traditional etymology is from the verb aperire, "to open", in allusion to its being the season when trees and flowers begin to "open"',"The month May was named for the Greek goddess Maia, who was identified with the Roman era goddess of fertility, Bona Dea, whose festival was held in May. Conversely, the Roman poet Ovid provides a second etymology, in which he says that the month of May is named for the maiores, Latin for 'elders'.","The Latin name for June is Junius. Ovid offers multiple etymologies for the name in the Fasti, a poem about the Roman calendar. The first is that the month is named after the Roman goddess Juno, the goddess of marriage and the wife of the supreme deity Jupiter; the second is that the name comes from the Latin word iuniores, meaning 'younger ones', as opposed to maiores ('elders') for which the preceding month May (Maius) may be named.","July is the seventh month of the year (between June and August) in the Julian and Gregorian Calendars and one of seven months with the length of 31 days. It was named by the Roman Senate in honor of the Roman general, Julius Caesar, it being the month of his birth. Prior to that, it was called Quintilis.","This month was originally named Sextili in Latin, because it was the sixth month in the original ten-month Roman calendar under Romulus in 753 BC, when March was the first month of the year.","September (from Latin septem, 'seven') was originally the seventh of ten months on the oldest known Roman calendar, with March (Latin Martius) the first month of the year until perhaps as late as 153 BC.","The eighth month in the old Roman calendar, October retained its name (from the Latin octō meaning 'eight') after January and February were inserted into the calendar that had originally been created by the Romans.","November was the ninth month of the ancient Roman calendar. November retained its name (from the Latin novem meaning 'nine') when January and February were added to the Roman calendar.","December gets its name from the Latin word decem (meaning ten) because it was originally the tenth month of the year in the Roman calendar, which began in March. The winter days following December were not included as part of any month. Later, the months of January and February were created out of the monthless period and added to the beginning of the calendar, but December retained its name."];
+	}
+	htmlText+= text[month]+'<br><br>';
+    document.getElementById('texte').innerHTML=htmlText;
 
+var htmlImage='';
+	
+	var imagesSrc = ["img/Jan.jpg","img/Fev.jpg",'img/Mar.jpg','img/Avr.jpg','img/Mai.jpg','img/Jui.jpg','img/Juil.jpg','img/Aou.jpg','img/Sep.jpg','img/Oct.jpg','img/Nov.jpg','img/Dec.jpg'];
+	htmlImage += '<br><img src="'+imagesSrc[month]+'" class="img-responsive img-rounded" alt="Responsive image">';
+    document.getElementById('image').innerHTML=htmlImage;
+	
+// Point B
 }

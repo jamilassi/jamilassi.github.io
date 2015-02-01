@@ -3,12 +3,12 @@
 Jamil Assi */
 
 body {
-	background-image: url(../img/tumblr_ncsm8ao9mA1sfie3io1_1280.jpg);
-	background-size:cover;
+	background-image: url(../img/squared_metal.png);
+	/*background-size: cover;*/
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	background-position: 0 0%;
-	background-repeat: no-repeat;
-	background-color:#000;
+	/*background-repeat: no-repeat;*/
+	background-color: #000;
 	}
 
 div * {
@@ -18,7 +18,7 @@ div * {
 #bas {
 	
 	}
-h1 {
+h1.ashun {
 	font-family: 'Codystar', cursive;
 	text-align:center;
 	}
@@ -26,11 +26,14 @@ h1 {
 h4 {
 	text-align:center;
 	}
-#titre {
+.titre {
 	color: #005188;
 	height: 30px;
 	font-family: 'La Belle Aurore', cursive;
 	font-size: larger;
+	text-align: center;
+	padding-left: 33px;
+	padding-right: 33px;
 	}
 .choice {
 	text-align: center;
@@ -78,4 +81,13 @@ h4 {
 	}
 .footer {
 	height:333px;
+	}
+#texte {
+	font-family: font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	padding-top: 70px;
+	font-size: 120%;
+	text-align: justify;	
+	}	
+#image {
+	padding-top:21px;
 	}

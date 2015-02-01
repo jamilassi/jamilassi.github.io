@@ -31,3 +31,4 @@ var calendar = new Calendar('calendar', new Date(),'large','fr');
 jQuery(document).ready(function(){
 	$("p").text();
 	});
+	

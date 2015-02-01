@@ -1,5 +1,6 @@
 <!-- Jamil Assi -->
 <!doctype html>
+<html lang="en">
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,11 +17,12 @@
 </head>
 
 <body onload=init()>
+
 <div class="container">
+
 	<div class="row">
-  			<div class="col-md-12">
-                              <h1>My <span id="titre">Blue</span> Calendar</h1>
-                      <p class="soustitre">Please fasten your seatbelt before time-travelling</p>
+  			<div class="col-lg-12">
+                      <h1 class="ashun">My Calendar</h1>
                       <br>
                       <div class="choice">
                       <span class="lang">English</a>&nbsp;&bull;&nbsp;</span>
@@ -37,16 +39,19 @@
 	</div>
 	<br><br>
    <div class="row">
-                      <div class="col-md-3">
+                      <div class="col-lg-3" >
+                      <div id="texte">
                       </div>
-                      <div class="col-md-6">
+                      </div>
+                      <div class="col-lg-6">
                        <div id="calendar"></div>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-lg-3">
+                      <div id="image"></div>
                       </div>
    </div>
    <div class="row">
-  			<div class="col-md-12 footer">
+  			<div class="col-lg-12 footer">
                      <br><br>
             </div>
 	</div>
@@ -56,9 +61,9 @@
 
 </div>
     
-    
+<script src="js/bootstrap.js"></script>    
 <script src="js/jquery-2.1.3.js"></script>  
-<script src="js/bootstrap.js"></script>
+
 <script src="js/Calendar.fr.js"></script> 
 <script src="js/Calendar.js"></script>    
 <script src="js/main.js"></script>
