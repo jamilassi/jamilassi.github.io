@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document 
+Jamil Assi */
+
+
+body {
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-align: center;
+	font-size: medium;
+}

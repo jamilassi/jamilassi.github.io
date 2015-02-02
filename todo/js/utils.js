@@ -26,6 +26,4 @@ function hide(el) {
 
 context.Utils.hide = hide;
 
-
-
 })(window);

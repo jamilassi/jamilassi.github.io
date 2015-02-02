@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>Tax Calculator Project</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="corps">
+<table width="100%">
+<tr>
+<td colspan="2">
+<h1>Tax Calculator Program</h1>
+<td>
+</tr>
+<tr>
+<td width="50%" align="center">
+<img src="img/toomuch.jpg" width="100%">
+</td>
+<td id="droite" valign="top" width="50%">
+
+
+<span><label><h2>Amount:</h2></label>
+<input id="amount">&nbsp;&#36;</span>
+<br/>
+
+<button onClick="calculate()">Calculate</button>
+<br/>
+<h4> TPS (5%) <span id="tps"></span></h4>
+<h4> TVQ (9,975%) <span id="tvq"></span></h4>
+<br/>
+<div class="bleu"><h2><span id="taxes"></span></h2></div>
+<div class="rouge"><h2><span id="total"></span></h2></div>
+</td>
+<tr>
+<td align="center">
+
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Jamil Assi -->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To Do Program</title>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1> The Todo Program</h1>
+<h2> Todo List </h2>
+<table width="80%" border="0">
+  <tbody>
+    <tr>
+      <td><h3>Todo List</h3></td>
+      <td></td>
+      <td><h3>Things already Done</h3></td>
+    </tr>
+    <tr>
+      <td><div id="aFaire"></div></td>
+      <td align="center"><img src="img/pen.png" alt="" width="175" /><br><button onclick="store()">Store Checked Tasks</button></td>
+      <td><div id="dejaFait"></div></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 align="center"> Add a New Task </h2>
+<div align="center">
+<input id="nouveau"></input>
+<button onClick="nouvelItem()">Add</button>
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+</body>
+</html>

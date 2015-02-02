@@ -1,0 +1,2 @@
+# MyTemplate
+Template Skeleton

@@ -5,8 +5,10 @@ Jamil Assi
 */
 (function(context){
 
-context.Utils = {};
 
+
+context.Appeller ={};
+    
 function show(id) {
 	var ele=document.getElementById(id);
 	if (ele.style.display === "none")
@@ -17,15 +19,24 @@ function show(id) {
 		ele.style.display="none";
 		}
 	}
+   
 
-context.Utils.show = show;
+context.Appeller.show=show;
 
+    
 function hide(el) {
 	el.style.display="none";
-	}
+	}   
+    
 
-context.Utils.hide = hide;
+context.Appeller.hide=hide;    
 
+    
+function foo() {
+        console.log("Function foo() (inside the object Appeller) is Called from file: utils.js");
+    }
+    
 
+context.Appeller.foo=foo;
 
 })(window);
