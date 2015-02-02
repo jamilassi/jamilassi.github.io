@@ -46,34 +46,9 @@ function titreBanniere(titre) {
 	return htmlTitreBanniere;
 	}
 	
-function banniereHorizontale() {
-	htmlBanniereHorizontale += contenuSection('1','pics01.jpg','Shows a list of element in an Array with a for loop. Uses the push method to add element. Transfers from an array to another.','#');
-	htmlBanniereHorizontale += contenuSection('2','pics11.jpg','Uses conditions with "If" and creates interaction and scenarios interpretation as a game of Tic Tac Toe. Uses and exploit the DOM: Document.object.getElementById()','#');	
-	htmlBanniereHorizontale += contenuSection('3','pics12.jpg','Uses the Date() Object to show the date and the function setInterval() to simulate a watch by refreshing the browser each second (1000ms)','#');
-	htmlBanniereHorizontale += contenuSection('4','pics13.jpg','Simple program using too variables as taxes and return results of taxes','#');	
-	return htmlBanniereHorizontale;		
-	}
-	
-				function contenuSection(numSection,imageFichier,resume,lien) {
-					htmlContenuSection ="";
-					htmlContenuSection += '<div class="3u">';
-					htmlContenuSection += '<section id="section'+numSection+'">';
-					htmlContenuSection += '<a href="#" class="image full"><img src="images/'+imageFichier+'" alt="" /></a>';
-					htmlContenuSection += '<div id="interneTailleOngletDesktop" style="height:75px;"><p>'+resume+'</p></div>';
-					htmlContenuSection += '<a href="'+lien+'" class="button">Open</a>';
-					htmlContenuSection += '</section>';
-					htmlContenuSection += '</div>';
-					return htmlContenuSection;
-					}
 
-
-
-
-
-
-	
 function grandeBanniereHorizontale() {
-	htmlGrandeBanniereHorizontale += contenuGrandeSection('Javascript','The script language of the web','pics02.jpg','Native JS Projects','javascript.html');
+	htmlGrandeBanniereHorizontale += contenuGrandeSection('Javascript','The script language of the web','pics02.jpg','Some Native JS Projects','javascript.html');
 	htmlGrandeBanniereHorizontale += contenuPetiteSection('More...', 'From the Web', '','http://jsfiddle.net','The JSFiddle Platform Website','http://www.codecademy.com/learn','The Codecademy Site','','');
 	return htmlGrandeBanniereHorizontale;
 }
@@ -85,11 +60,11 @@ function grandeBanniereHorizontale() {
 				  htmlcontenuGrandeSection += '<div class="8u skel-cell-important">';
 				  htmlcontenuGrandeSection += '<section id="content">';
 				  htmlcontenuGrandeSection += '<header>';
-				  htmlcontenuGrandeSection += '<h2>'+titre+'</h2>';
+				  htmlcontenuGrandeSection += '<h2><a href="'+lien+'">'+titre+'</a></h2>';
 				  htmlcontenuGrandeSection += '<span class="byline">'+sousTitre+'</span>';
 				  htmlcontenuGrandeSection += '</header>';
 				  htmlcontenuGrandeSection += '<p><a href="'+lien+'" class="image full"><img src="images/'+imageFichier+'" alt=""></a></p>';
-				  htmlcontenuGrandeSection += '<p>'+texte+'</p>';
+				  htmlcontenuGrandeSection += '<p><a href="'+lien+'">'+texte+'</a></p>';
 				  /*htmlcontenuGrandeSection += '<a href="'+lien+'" class="button">Open</a>';*/
 				  htmlcontenuGrandeSection += '</section>';
 				  htmlcontenuGrandeSection += '</div>';
