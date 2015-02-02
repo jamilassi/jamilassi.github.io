@@ -62,7 +62,7 @@ function contenuSection(numSection,titreSection,imageFichier,resume,lien) {
 	htmlContenuSection ="";
 	htmlContenuSection += '<div class="3u">';
 	htmlContenuSection += '<section id="section'+numSection+'">';
-	htmlContenuSection += '<p id="titreSection'+titreSection+'" style="font-size:70%;"><p>';
+	htmlContenuSection += '<p id="titreSection" style="font-size:70%;">'+titreSection+'<p>';
 	htmlContenuSection += '<a href="'+lien+'" class="image full" target="_blank"><img src="images/'+imageFichier+'" alt="" /></a>';
 	htmlContenuSection += '<div id="interneTailleOngletDesktop" style="height:75px;"><p>'+resume+'</p></div>';
 	/*htmlContenuSection += '<a href="'+lien+'" class="button" target="_blank">Open</a>';*/
