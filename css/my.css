@@ -1,0 +1,43 @@
+/*!
+ * my.css
+ * Adding to the Template
+ * A few transformations
+ */
+/* HTML
+<input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+*/
+.form-control {
+	background-color:transparent;
+	border:none;
+	}
+
+aside.bh {
+	background-color:#000;
+    height:50px;
+}
+.my {
+	
+	}
+.fa-inverse {
+color: rgba(51, 51, 51, 0.9);
+}
+#plus {
+	font-family:'Nothing You Could Do',cursive;
+	color:#fed136;
+	font-size:100%;
+	}
+	
+#continue {
+	color:#000;
+	}
+
+#menu {
+	background-attachment:fixed;
+	background-image: url(../img/bgw.jpg);
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	}
